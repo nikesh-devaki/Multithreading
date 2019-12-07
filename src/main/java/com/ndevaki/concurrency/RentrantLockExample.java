@@ -1,10 +1,16 @@
 package com.ndevaki.concurrency;
 
-public class SynchronizedExample {
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+public class RentrantLockExample {
     private static  int count=0;
 
-    private static synchronized void increment(){
+    static Lock lock=new ReentrantLock(true);
+    private static void increment(){
+        lock.lock();
         count++;
+        lock.unlock();
     }
 
     public static void getThread() throws InterruptedException {
@@ -13,7 +19,7 @@ public class SynchronizedExample {
             @Override
             public void run() {
                 for(int i=1;i<=200;i++) {
-                  //  System.out.println(Thread.currentThread().getName());
+                    //  System.out.println(Thread.currentThread().getName());
                     increment();
                     try {
                         Thread.sleep(10);
@@ -29,7 +35,7 @@ public class SynchronizedExample {
             @Override
             public void run() {
                 for(int i=1;i<=200;i++) {
-                   // System.out.println(Thread.currentThread().getName());
+                    // System.out.println(Thread.currentThread().getName());
                     increment();
                     try {
                         Thread.sleep(10);
@@ -47,7 +53,7 @@ public class SynchronizedExample {
     }
 
     public static void main(String[] args) throws InterruptedException {
-      getThread();
+        getThread();
 
 
     }

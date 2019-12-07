@@ -1,10 +1,21 @@
 package com.ndevaki.concurrency;
 
-public class SynchronizedExample {
-    private static  int count=0;
+public class SynchronizedBlockExample {
 
-    private static synchronized void increment(){
-        count++;
+    private static  int counter1=0;
+    private static  int counter2=0;
+
+    public static Object object1=new Object();
+    public static Object object2=new Object();
+    public static void increment1(){
+        synchronized (object1){
+            counter1++;
+        }
+    }
+    public static void increment2(){
+        synchronized (object2){
+            counter2++;
+        }
     }
 
     public static void getThread() throws InterruptedException {
@@ -13,8 +24,8 @@ public class SynchronizedExample {
             @Override
             public void run() {
                 for(int i=1;i<=200;i++) {
-                  //  System.out.println(Thread.currentThread().getName());
-                    increment();
+                    System.out.println(Thread.currentThread().getName());
+                    increment1();
                     try {
                         Thread.sleep(10);
                     } catch (InterruptedException e) {
@@ -29,8 +40,8 @@ public class SynchronizedExample {
             @Override
             public void run() {
                 for(int i=1;i<=200;i++) {
-                   // System.out.println(Thread.currentThread().getName());
-                    increment();
+                    System.out.println(Thread.currentThread().getName());
+                    increment2();
                     try {
                         Thread.sleep(10);
                     } catch (InterruptedException e) {
@@ -43,12 +54,14 @@ public class SynchronizedExample {
         t2.start();
         t1.join();
         t2.join();
-        System.out.println(count);
+        System.out.println(counter1);
+        System.out.println(counter2);
     }
 
     public static void main(String[] args) throws InterruptedException {
-      getThread();
+        getThread();
 
 
     }
 }
+
