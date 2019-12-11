@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1647d07-3061-4180-b4d0-55f9d2a05016" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ndevaki/concurrency/RentrantLockExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ndevaki/concurrency/SynchronizedBlockExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ndevaki/concurrency/casestudy/ProducerNConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ndevaki/concurrency/casestudy/diningphilosophor/DiningPhilosopher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ndevaki/concurrency/casestudy/diningphilosophor/Philosopher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ndevaki/concurrency/casestudy/studentsLibrary/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ndevaki/concurrency/casestudy/studentsLibrary/BooksManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ndevaki/concurrency/casestudy/studentsLibrary/LibraryManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ndevaki/concurrency/casestudy/studentsLibrary/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ndevaki/concurrency/utils/RandomTimeGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ndevaki/concurrency/FutureExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ndevaki/concurrency/casestudy/studentsNstudyrooms/StudentsNStudyRooms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ndevaki/concurrency/forkJoinFramework/RecursiveTaskExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ndevaki/concurrency/Runnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ndevaki/concurrency/RunnableExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ndevaki/concurrency/SynchronizedExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ndevaki/concurrency/SynchronizedExample.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,13 +51,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LibraryManagement">
+  <component name="RunManager" selected="Application.RecursiveTaskExample">
     <configuration name="DiningPhilosopher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ndevaki.concurrency.casestudy.diningphilosophor.DiningPhilosopher" />
       <module name="Multithreading" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ndevaki.concurrency.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FutureExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ndevaki.concurrency.FutureExample" />
+      <module name="Multithreading" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ndevaki.concurrency.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProducerNConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ndevaki.concurrency.casestudy.ProducerNConsumer" />
+    <configuration name="RecursiveTaskExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ndevaki.concurrency.forkJoinFramework.RecursiveTaskExample" />
       <module name="Multithreading" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ndevaki.concurrency.casestudy.*" />
+          <option name="PATTERN" value="com.ndevaki.concurrency.forkJoinFramework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,25 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RentrantLockExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ndevaki.concurrency.RentrantLockExample" />
+    <configuration name="StudentsNStudyRooms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ndevaki.concurrency.casestudy.studentsNstudyrooms.StudentsNStudyRooms" />
       <module name="Multithreading" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ndevaki.concurrency.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SynchronizedBlockExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ndevaki.concurrency.SynchronizedBlockExample" />
-      <module name="Multithreading" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ndevaki.concurrency.casestudy.*" />
+          <option name="PATTERN" value="com.ndevaki.concurrency.casestudy.studentsNstudyrooms.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RecursiveTaskExample" />
+        <item itemvalue="Application.FutureExample" />
+        <item itemvalue="Application.StudentsNStudyRooms" />
         <item itemvalue="Application.LibraryManagement" />
         <item itemvalue="Application.DiningPhilosopher" />
-        <item itemvalue="Application.RentrantLockExample" />
-        <item itemvalue="Application.ProducerNConsumer" />
-        <item itemvalue="Application.SynchronizedBlockExample" />
       </list>
     </recent_temporary>
   </component>
