@@ -1,4 +1,4 @@
-package com.ndevaki.concurrency;
+package com.ndevaki.concurrency.basics.examples;
 
 public class SynchronizedExample {
     private static  int count=0;

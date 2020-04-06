@@ -1,4 +1,4 @@
-package com.ndevaki.concurrency.casestudy.diningphilosophor;
+package com.ndevaki.concurrency.casestudies.diningphilosophor;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

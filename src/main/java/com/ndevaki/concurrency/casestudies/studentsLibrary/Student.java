@@ -1,4 +1,4 @@
-package com.ndevaki.concurrency.casestudy.studentsLibrary;
+package com.ndevaki.concurrency.casestudies.studentsLibrary;
 
 import com.ndevaki.concurrency.utils.RandomTimeGenerator;
 

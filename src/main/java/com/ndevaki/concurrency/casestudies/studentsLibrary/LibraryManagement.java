@@ -1,4 +1,4 @@
-package com.ndevaki.concurrency.casestudy.studentsLibrary;
+package com.ndevaki.concurrency.casestudies.studentsLibrary;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

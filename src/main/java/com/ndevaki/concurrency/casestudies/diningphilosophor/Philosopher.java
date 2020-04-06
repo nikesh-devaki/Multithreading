@@ -1,4 +1,4 @@
-package com.ndevaki.concurrency.casestudy.diningphilosophor;
+package com.ndevaki.concurrency.casestudies.diningphilosophor;
 
 import com.ndevaki.concurrency.utils.RandomTimeGenerator;
 

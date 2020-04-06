@@ -1,4 +1,4 @@
-package com.ndevaki.concurrency.casestudy;
+package com.ndevaki.concurrency.casestudies;
 
 import java.util.ArrayList;
 

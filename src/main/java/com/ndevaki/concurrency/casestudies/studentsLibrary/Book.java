@@ -1,4 +1,4 @@
-package com.ndevaki.concurrency.casestudy.studentsLibrary;
+package com.ndevaki.concurrency.casestudies.studentsLibrary;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;

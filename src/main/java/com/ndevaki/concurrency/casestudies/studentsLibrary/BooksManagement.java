@@ -1,4 +1,4 @@
-package com.ndevaki.concurrency.casestudy.studentsLibrary;
+package com.ndevaki.concurrency.casestudies.studentsLibrary;
 
 public class BooksManagement {
     Book[] books=new Book[5];
